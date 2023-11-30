@@ -1,0 +1,42 @@
+{
+    "name": "huberwaycms/dev-tool",
+    "description": "Dev tool commands for HuberwayCMS CMS",
+    "type": "package",
+    "license": "MIT",
+    "keywords": [
+        "huberwaycms",
+        "huberwaycms cms",
+        "huberwaycms platform",
+        "huberwaycms dev tools"
+    ],
+    "homepage": "https://huberway.com",
+    "authors": [
+        {
+            "name": "Huberway Technologies",
+            "email": "contact@huberway.com"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "HuberwayCMS\\DevTool\\": "src"
+        }
+    },
+    "require": {
+
+    },
+    "require-dev": {
+        "laravel/pint": "^1.4.0",
+        "phpunit/phpunit": "^9.0|^10.0"
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "HuberwayCMS\\DevTool\\Providers\\DevToolServiceProvider"
+            ]
+        }
+    },
+    "config": {
+        "sort-packages": true
+    },
+    "minimum-stability": "stable"
+}

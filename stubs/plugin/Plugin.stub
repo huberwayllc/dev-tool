@@ -1,0 +1,15 @@
+<?php
+
+namespace HuberwayCMS\{Module};
+
+use Illuminate\Support\Facades\Schema;
+use HuberwayCMS\PluginManagement\Abstracts\PluginOperationAbstract;
+
+class Plugin extends PluginOperationAbstract
+{
+    public static function remove(): void
+    {
+        Schema::dropIfExists('{names}');
+        Schema::dropIfExists('{names}_translations');
+    }
+}

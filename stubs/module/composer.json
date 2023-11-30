@@ -1,0 +1,20 @@
+{
+  "name": "huberwaycms/{-name}",
+  "description": "{Name} package",
+  "type": "package",
+  "autoload": {
+    "psr-4": {
+      "HuberwayCMS\\{Name}\\": "src"
+    }
+  },
+  "require": {
+
+  },
+  "extra":{
+    "laravel":{
+      "providers":[
+        "HuberwayCMS\\{Name}\\Providers\\{Name}ServiceProvider"
+      ]
+    }
+  }
+}

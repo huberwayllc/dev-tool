@@ -1,0 +1,25 @@
+<?php
+
+namespace HuberwayCMS\{Module}\Models;
+
+use HuberwayCMS\Base\Casts\SafeContent;
+use HuberwayCMS\Base\Enums\BaseStatusEnum;
+use HuberwayCMS\Base\Models\BaseModel;
+
+/**
+ * @method static \HuberwayCMS\Base\Models\BaseQueryBuilder<static> query()
+ */
+class {Name} extends BaseModel
+{
+    protected $table = '{names}';
+
+    protected $fillable = [
+        'name',
+        'status',
+    ];
+
+    protected $casts = [
+        'status' => BaseStatusEnum::class,
+        'name' => SafeContent::class,
+    ];
+}
